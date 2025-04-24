@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wave Shooter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="game-canvas" tabindex="0"></canvas>
+        <div id="hud">
+            <div>Wave: <span id="wave">1</span>/100</div>
+            <div>Health: <span id="health">100</span></div>
+            <div>Score: <span id="score">0</span></div>
+            <div>Enemies Left: <span id="enemies-left">0</span></div>
+        </div>
+        <div id="start-screen">
+            <h1>Wave Shooter</h1>
+            <button id="start-btn">Start Game</button>
+            <div class="controls">
+                <p>WASD to move</p>
+                <p>Mouse to aim</p>
+                <p>Click to shoot</p>
+            </div>
+        </div>
+        <div id="wave-screen" class="hidden">
+            <h2>Wave <span id="wave-number">1</span> Complete!</h2>
+            <button id="next-wave-btn">Next Wave</button>
+        </div>
+        <div id="game-over" class="hidden">
+            <h2>Game Over</h2>
+            <p>Reached Wave: <span id="final-wave">0</span></p>
+            <p>Final Score: <span id="final-score">0</span></p>
+            <button id="restart-btn">Play Again</button>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
